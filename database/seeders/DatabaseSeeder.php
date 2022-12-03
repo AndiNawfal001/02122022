@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             JenisBarangSeeder::class,
             ManajemenSeeder::class,
             KaprogSeeder::class,
+            RuanganSeeder::class,
 
         ]);
     }

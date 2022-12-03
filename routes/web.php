@@ -11,6 +11,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengajuanBBController;
 use App\Http\Controllers\PengajuanPBController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\RuanganController;
 // use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -88,6 +89,13 @@ Route::post('/pengajuan/PB/simpan',[ PengajuanPBController::class,'store']);
 Route::get('/pengajuan/PB/edit/{id}',[PengajuanPBController::class,'edit']);
 Route::post('/pengajuan/PB/edit/editsimpan',[ PengajuanPBController::class,'editsimpan']);
 Route::get('/pengajuan/PB/hapus/{id}',[PengajuanPBController::class,'hapus']);
+
+Route::get('/ruangan',[ RuanganController::class,'index']);
+Route::get('/ruangan/tambah',[ RuanganController::class,'formTambah']);
+Route::post('/ruangan/simpan',[ RuanganController::class,'store']);
+Route::get('/ruangan/edit/{id}',[RuanganController::class,'edit']);
+Route::post('/ruangan/edit/editsimpan',[ RuanganController::class,'editsimpan']);
+Route::get('/ruangan/hapus/{id}',[RuanganController::class,'hapus']);
 
 
 Route::get('/User/admin',[ AdminController::class,'index']);

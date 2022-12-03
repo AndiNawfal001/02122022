@@ -14,6 +14,7 @@
         value="{{ old('nama_barang', $edit->nama_barang) }}"/>
         <input type="hidden"  name="id_pengajuan_bb" value="{{$edit->id_pengajuan_pb}}" />
     </div>
+    
     <div class="form-control">
         <label class="label">
         <span class="label-text">Dari ruangan..</span>
