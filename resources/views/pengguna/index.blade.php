@@ -13,8 +13,7 @@
             </div>
         </div>
     </form>
-</div>
-<a href="User/admin"><button class="btn btn-sm btn-success my-5">Admin</button></a>
+</div> 
   <div class="overflow-x-auto overflow-y-auto">
     <table class="table w-full ">
 

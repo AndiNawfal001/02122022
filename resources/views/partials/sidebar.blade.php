@@ -26,19 +26,16 @@
                 <li>
                     <button type="button" class="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 hover:bg-base-100 dropdown-btn" >
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                        <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><a href="/User" class="hover:text-primary">Pengajuan</a></span> 
+                        <span class="flex-1 ml-3 text-left whitespace-nowrap " sidebar-toggle-item><a href="#" class="hover:text-primary">Pengajuan</a></span> 
                         <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>     
                     <ul class="hidden py-2 space-y-2 dropdown-container">
                         <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
+                            <a href="/pengajuan/BB" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Barang Baru</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
-                        </li>
-                        <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
-                        </li>
+                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Perbaikan</a>
+                        </li> 
                     </ul>
                 </li>
                 <li>
@@ -49,13 +46,13 @@
                     </button>     
                     <ul class="hidden py-2 space-y-2 dropdown-container">
                         <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
+                            <a href="/User/admin" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Admin</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
+                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Manajemen</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Products</a>
+                            <a href="#" class="flex items-center p-2 pl-11 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-base-100">Kaprog</a>
                         </li>
                     </ul>
                 </li>
