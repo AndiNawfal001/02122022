@@ -17,7 +17,7 @@ return new class extends Migration
             $table->engine = 'InnoDB';
             $table->charset = 'utf8mb4';
             $table->collation = 'utf8mb4_general_ci';
-            $table->string('id_pengajuan_pb')->primary();
+            $table->integer('id_pengajuan_pb',true);
             $table->char('manajemen', 18);
             $table->char('kaprog', 18);
             $table->integer('kode_barang');

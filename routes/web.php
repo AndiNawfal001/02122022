@@ -9,6 +9,7 @@ use App\Http\Controllers\KaprogController;
 use App\Http\Controllers\LevelUserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengajuanBBController;
+use App\Http\Controllers\PengajuanPBController;
 use App\Http\Controllers\SupplierController;
 // use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -80,6 +81,13 @@ Route::post('/pengajuan/BB/simpan',[ PengajuanBBController::class,'store']);
 Route::get('/pengajuan/BB/edit/{id}',[PengajuanBBController::class,'edit']);
 Route::post('/pengajuan/BB/edit/editsimpan',[ PengajuanBBController::class,'editsimpan']);
 Route::get('/pengajuan/BB/hapus/{id}',[PengajuanBBController::class,'hapus']);
+
+Route::get('/pengajuan/PB',[ PengajuanPBController::class,'index']);
+Route::get('/pengajuan/PB/tambah',[ PengajuanPBController::class,'formTambah']);
+Route::post('/pengajuan/PB/simpan',[ PengajuanPBController::class,'store']);
+Route::get('/pengajuan/PB/edit/{id}',[PengajuanPBController::class,'edit']);
+Route::post('/pengajuan/PB/edit/editsimpan',[ PengajuanPBController::class,'editsimpan']);
+Route::get('/pengajuan/PB/hapus/{id}',[PengajuanPBController::class,'hapus']);
 
 
 Route::get('/User/admin',[ AdminController::class,'index']);

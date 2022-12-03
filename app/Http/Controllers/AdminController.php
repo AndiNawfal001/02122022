@@ -16,6 +16,7 @@ class AdminController extends Controller
             ->join('pengguna', 'pengguna.id_pengguna', '=', 'admin.id_pengguna')
             ->select('admin.*', 'pengguna.*')
             ->get();
+        
         // dd($adminPengguna);
         // $data = DB::select('SELECT * FROM admin');
 
