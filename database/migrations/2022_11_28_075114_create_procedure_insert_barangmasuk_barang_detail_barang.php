@@ -42,6 +42,7 @@ return new class extends Migration
 
         INSERT INTO barang (kode_barang ,id_jenis_brg ,nama_barang, jml_barang)
         VALUES (kode_barang ,id_jenis_brg ,nama_barang, jml_barang);
+
         INSERT INTO barang_masuk (kode_barang, supplier, manajemen, tgl_masuk)
         VALUES (kode_barang, id_supplier, nip, NOW());
 
