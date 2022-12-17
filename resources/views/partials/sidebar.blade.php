@@ -1,6 +1,6 @@
 <div class="z-40 fixed lg:static overflow-auto top-0 bottom-0 left-0"> {{-- fixed --}}
 <aside class="z-40 flex" aria-label="Sidebar"> {{-- lg:w-64 --}}
-        <div class="!min-h-screen w-full pt-20 lg:pt-5 py-4 px-5 bg-base-200  "> {{-- pt-20 --}}
+        <div class="!min-h-screen w-full pt-20 lg:pt-5 py-4 px-5 bg-base-200"> {{-- pt-20 --}}
             <ul class="space-y-2">
                 <li class="hover:bg-base-100 rounded-lg">
                     <a href="/dashboard" class="flex items-center p-2">

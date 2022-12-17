@@ -10,10 +10,12 @@ class RuanganController extends Controller
 {
     public function index(){
         $data = DB::select('SELECT * FROM ruangan');
-        return view('ruangan.index', compact('data'));
+        $jumlah = DB::select('SELECT * FROM jumlah_data_ruangan');
+
+        return view('ruangan.index', compact('data', 'jumlah'));
     }
 
-    public function formTambah(){ 
+    public function formTambah(){
 
         return view('ruangan.formtambah');
     }
@@ -30,7 +32,7 @@ class RuanganController extends Controller
         $tambah_ruangan = DB::insert("CALL tambah_ruangan(:nama_ruangan, :penanggung_jawab, :ket)", [
             'nama_ruangan' => $request->input('nama_ruangan'),
             'penanggung_jawab' => $request->input('penanggung_jawab'),
-            'ket' => $request->input('ket'), 
+            'ket' => $request->input('ket'),
 
             // dd($request->all())
         ]);
@@ -57,7 +59,7 @@ class RuanganController extends Controller
             $data = [
                 'nama_ruangan' => $request->input('nama_ruangan'),
                 'penanggung_jawab' => $request->input('penanggung_jawab'),
-                'ket' => $request->input('ket'), 
+                'ket' => $request->input('ket'),
 
             ];
             $upd = DB::table('ruangan')

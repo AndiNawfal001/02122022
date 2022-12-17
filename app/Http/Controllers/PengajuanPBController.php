@@ -48,7 +48,7 @@ class PengajuanPBController extends Controller
         $tambah_pengajuan_pb = DB::insert("CALL tambah_pengajuan_pb(:manajemen, :kaprog, :nama_barang, :ruangan)", [
             'manajemen' => $request->input('manajemen'),
             'kaprog' => $request->input('kaprog'),
-            'nama_barang' => $request->input('nama_barang'),  
+            'nama_barang' => $request->input('nama_barang'),
             'ruangan' => $request->input('ruangan'),
 
             // dd($request->all())
@@ -76,7 +76,7 @@ class PengajuanPBController extends Controller
             $data = [
                 'manajemen' => $request->input('manajemen'),
                 'kaprog' => $request->input('kaprog'),
-                'nama_barang' => $request->input('nama_barang'),  
+                'nama_barang' => $request->input('nama_barang'),
                 'ruangan' => $request->input('ruangan'),
 
             ];

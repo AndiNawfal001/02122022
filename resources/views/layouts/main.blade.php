@@ -7,17 +7,16 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
-<body >
+<body class="min-h-screen bg-base-300">
 @include('partials.navbar')
 
 <div class="lg:flex select-none">
-    <div class="lg:basis-1/6 relative hidden lg:block  sidebar">
+    <div class="lg:basis-1/6 relative hidden lg:block bg-base-200 sidebar">
         @include('partials.sidebar')
     </div>
 
-    <div class="lg:basis-5/6 rounded-lg m-3 p-3 shadow-lg">
+    <div class="lg:basis-5/6 rounded-lg m-5 p-5 shadow-lg bg-base-100" data-aos="fade-down" ">
         @yield('container')
-
     </div>
 </div>
 

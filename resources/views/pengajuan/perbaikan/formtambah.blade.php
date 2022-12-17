@@ -39,8 +39,8 @@
                         <option value="{{ $item->nama_barang }} ">{{ $item->nama_barang }}</option>
                     @endforeach
                 </select>
-            </div> 
- 
+            </div>
+
             <div class="form-control">
                 <label class="label">
                     <span class="label-text">Dari Ruangan..</span>

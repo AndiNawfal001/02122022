@@ -2,9 +2,8 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
@@ -16,15 +15,8 @@ return new class extends Migration
     public function up()
     {
         DB::unprepared(
-            "CREATE OR REPLACE VIEW barang_detail AS (
-                SELECT
-                barang.id_barang, barang.nama_barang,
-                detail_barang.kode_barang, detail_barang.spesifikasi
-
-                FROM barang
-                JOIN detail_barang
-                    ON barang.id_barang = detail_barang.kode_barang
-
+            "CREATE OR REPLACE VIEW jumlah_data_ruangan AS(
+                SELECT COUNT(id_ruangan) FROM ruangan
             )"
           );
     }
@@ -36,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('view_barang_detail');
+        Schema::dropIfExists('view_jumlah_data_ruangan');
     }
 };
